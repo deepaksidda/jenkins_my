@@ -10,7 +10,7 @@ pipeline {
             steps {
                 script {
                     // Checkout the selected branch
-                    checkout([$class: 'GitSCM', branches: [[name: params.BRANCH]], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/ryb9696/assignment.git']]])
+                    checkout([$class: 'GitSCM', branches: [[name: params.BRANCH]], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/deepaksidda/jenkins_my.git']]])
                 }
             }
         }
